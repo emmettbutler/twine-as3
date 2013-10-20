@@ -19,9 +19,10 @@ Copy this repo's `org` directory into your project. If your project already
 contains an `org` directory, copy `org/twine' into the existing `org`
 directory.
 
-Edit `TwineImporter.as` to point to your exported JSON story file. This is
-necessary since the importer loads the file at compile time.
+Embed your exported JSON file anywhere in your code
+
+    [Embed(source='../assets/my_story.json', mimeType="application/octet-stream")] public static var twineFile:Class;
 
 Get the story as an imported AS3 array by calling
 
-    var pages:Array = (new org.twine.TwineImporter()).getPages();
+    var pages:Array = (new org.twine.TwineImporter(twineFile)).getPages();

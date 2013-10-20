@@ -2,18 +2,17 @@ package org.twine {
     import com.adobe.serialization.json.JSON;
 
     public class TwineImporter {
-        // CHANGE THIS PATH TO YOUR EXPORTED JSON
-        [Embed(source='../../../assets/mystory.json', mimeType="application/octet-stream")] public static var twineFile:Class;
-
-        private var twineFile_:Object = new twineFile();
-        private var twineJson:String = twineFile_.toString();
+        private var twineFile_:Object;
+        private var twineJson:String;
         private var _data:Object;
 
         private var pages:Array;
 
-        public function TwineImporter() {
+        public function TwineImporter(twineFile:Class) {
             super();
 
+            twineFile_ = new twineFile();
+            twineJson = twineFile_.toString();
             _data = com.adobe.serialization.json.JSON.decode(twineJson);
             parseTwine();
         }
