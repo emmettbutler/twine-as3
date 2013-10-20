@@ -19,6 +19,10 @@ Copy this repo's `org` directory into your project. If your project already
 contains an `org` directory, copy `org/twine' into the existing `org`
 directory.
 
+Copy this repo's `lib` directory into your project. If your project already
+contains a `lib` directory, copy `lib/as3corelib.swc` to the existing `lib`
+directory.
+
 Import the library
 
     import org.twine.*;
@@ -30,3 +34,7 @@ Embed your exported JSON file anywhere in your code
 Get the story as an imported AS3 array by calling
 
     var pages:Array = (new org.twine.TwineImporter(twineFile)).getPages();
+
+Compile the project by linking to the `as3corelib` library
+
+    mxmlc my/project.as -include-libraries=lib/as3corelib.swc
