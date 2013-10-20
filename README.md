@@ -4,7 +4,7 @@ Twine for Actionscript
 twine-as3 is a set of classes used to import stories written in
 [twine](http://www.gimcrackd.com/etc/src/) to
 Actionscript 3 data structures. With this, you can easily prototype
-story-based games in twine and import those storis into flash-based games,
+story-based games in twine and import those stories into flash-based games,
 including [flixel](http://www.flixel.org/) projects.
 
 Formatting twine stories for import is a multi-step process:
@@ -16,7 +16,7 @@ convert your twine .tw file to the JSON data format.
     ./twee my/file.tw -t json > out.json
 
 Copy this repo's `org` directory into your project. If your project already
-contains an `org` directory, copy `org/twine' into the existing `org`
+contains an `org` directory, copy `org/twine` into the existing `org`
 directory.
 
 Copy this repo's `lib` directory into your project. If your project already
