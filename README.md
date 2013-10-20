@@ -19,6 +19,10 @@ Copy this repo's `org` directory into your project. If your project already
 contains an `org` directory, copy `org/twine' into the existing `org`
 directory.
 
+Import the library
+
+    import org.twine.*;
+
 Embed your exported JSON file anywhere in your code
 
     [Embed(source='../assets/my_story.json', mimeType="application/octet-stream")] public static var twineFile:Class;
