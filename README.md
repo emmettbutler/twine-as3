@@ -9,6 +9,10 @@ Actionscript 3 data structures. With this, you can easily prototype
 story-based games in twine and import those stories into flash-based games,
 including [flixel](http://www.flixel.org/) projects.
 
+Put simply: twine's normal output is a web page that shows your story as text
+and links. With this project, you can make a twine story that outputs as
+a flash applet.
+
 Formatting twine stories for import is a multi-step process:
 
 Once you have a complete twine project, use the
